@@ -1,0 +1,377 @@
+<!-- Declaração do tipo de documento HTML5 -->
+<!DOCTYPE html>
+<!-- Abertura da tag html definindo o idioma como português do Brasil -->
+<html lang="pt-BR">
+<head>
+    <!-- Configuração do conjunto de caracteres para UTF-8 (suporta acentuação) -->
+    <meta charset="UTF-8">
+    <!-- Configuração de responsividade para adaptar a página a telas de celulares e desktops -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Biblioteca Digital UniFECAF</title>
+
+    <!-- Conexão prévia com os servidores de fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importação das famílias de fontes Montserrat e Open Sans do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Importação do repositório de ícones do Font Awesome (utilizado para os ícones sociais e de navegação) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Vinculação da folha de estilos CSS externa localizada na pasta css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho principal do site contendo o menu e a seção de apresentação (Hero) -->
+    <header class="header">
+        <!-- Container centralizador para limitar a largura do conteúdo do menu -->
+        <div class="container nav-container">
+            <!-- Área do logotipo da UniFECAF -->
+            <div class="logo">
+                <!-- Link do logotipo que redireciona para o topo da página principal -->
+                <a href="index.html">
+                    <!-- Bloco visual do logotipo institucional -->
+                    <div class="logo-box">
+                        <!-- Nome principal com destaque na palavra FECAF -->
+                        <span class="logo-text">Uni<span>FECAF</span></span>
+                        <!-- Subtítulo oficial abaixo da marca -->
+                        <span class="subtext">Centro Universitário</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Menu de navegação principal da página -->
+            <nav class="nav">
+                <!-- Lista não ordenada dos links de navegação -->
+                <ul>
+                    <!-- Item de menu redirecionando para a seção inicial -->
+                    <li><a href="index.html#home">Home</a></li>
+                    <!-- Item de menu redirecionando para a seção Sobre -->
+                    <li><a href="index.html#sobre">Sobre a Biblioteca</a></li>
+                    <!-- Item de menu redirecionando para a seção do acervo de livros -->
+                    <li><a href="index.html#livros">Acervo Digital</a></li>
+                    <!-- Item de menu redirecionando para a seção das unidades físicas -->
+                    <li><a href="index.html#unidades">Unidades</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Seção de destaque inicial (Hero) centralizada -->
+        <div class="hero-content container" id="home">
+            <!-- Título principal de atração da página -->
+            <h2>Biblioteca Digital UniFECAF</h2>
+            <!-- Parágrafo explicativo da proposta da biblioteca digital -->
+            <p>Acesse o acervo oficial de livros acadêmicos, e-books e materiais de apoio para impulsionar a sua formação profissional.</p>
+            <!-- Botão de chamada para ação (CTA) rolando a página até a seção de livros -->
+            <a href="#livros" class="btn-primary">Explorar Obras</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal do site -->
+    <main>
+        <!-- Seção informativa sobre a biblioteca -->
+        <section class="section sobre" id="sobre">
+            <!-- Container centralizador da seção Sobre -->
+            <div class="container">
+                <!-- Título da seção Sobre -->
+                <div class="section-title">
+                    <h2>Sobre a Biblioteca</h2>
+                    <!-- Detalhe estético em linha colorida abaixo do título -->
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Grid dividido em 2 colunas para alinhar texto e cartão de destaque -->
+                <div class="grid-2">
+                    <!-- Coluna da esquerda contendo a explicação em texto -->
+                    <div class="sobre-text">
+                        <!-- Subtítulo da seção sobre -->
+                        <h3>Inovação e Acessibilidade no Ensino Superior</h3>
+                        <!-- Parágrafo explicativo da proposta institucional -->
+                        <p>A Biblioteca Digital UniFECAF conecta alunos e professores a um ecossistema completo de aprendizagem. Desenvolvida para oferecer usabilidade fluida e responsiva em desktops e dispositivos móveis.</p>
+                        <!-- Lista de benefícios do sistema -->
+                        <ul class="sobre-list">
+                            <!-- Item de benefício com ícone de verificado -->
+                            <li><i class="fa-solid fa-check-circle"></i> Acervo atualizado com bibliografia básica e complementar.</li>
+                            <!-- Item de benefício com ícone de verificado -->
+                            <li><i class="fa-solid fa-check-circle"></i> Acesso contínuo 24/7 integrado ao Portal do Aluno.</li>
+                            <!-- Item de benefício com ícone de verificado -->
+                            <li><i class="fa-solid fa-check-circle"></i> Leitura digital simplificada e suporte presencial.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Coluna da direita contendo um cartão estatístico/destaque -->
+                    <div class="sobre-card">
+                        <!-- Bloco visual de destaque com borda colorida -->
+                        <div class="card-highlight">
+                            <!-- Ícone de livros de grande porte -->
+                            <i class="fa-solid fa-book-journal-whills icon-large"></i>
+                            <!-- Título do cartão estatístico -->
+                            <h4>Acervo Acadêmico</h4>
+                            <!-- Texto do cartão estatístico -->
+                            <p>Títulos essenciais das áreas de Tecnologia, Gestão, Direito, Design e Saúde.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção do acervo de livros com 8 itens -->
+        <section class="section livros" id="livros">
+            <!-- Container centralizador da seção de livros -->
+            <div class="container">
+                <!-- Título e instrução da seção de livros -->
+                <div class="section-title">
+                    <h2>Acervo em Destaque</h2>
+                    <p>Clique sobre a capa de qualquer livro para consultar a sinopse e detalhes da obra</p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Grelha responsiva disposta em 4 colunas para o desktop -->
+                <div class="grid-4">
+
+                    <!-- Livro 1 -->
+                    <article class="card-livro">
+                        <!-- Link envolvendo a capa para abrir a página de detalhes do livro 1 -->
+                        <a href="livro.html?id=1" class="book-cover-link">
+                            <div class="book-cover">
+                                <!-- Imagem da capa do livro 1 com suporte a arquivos em maiúscula ou minúscula -->
+                                <img src="assets/imagens/ADMINISTRAÇÃO MODERNA.jpg" alt="Capa Administração Moderna" onerror="this.src='assets/imagens/adm-moderna.jpg'">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <!-- Categoria do livro -->
+                            <span class="badge">Gestão</span>
+                            <!-- Título da obra -->
+                            <h3>Administração Moderna</h3>
+                            <!-- Nome do autor -->
+                            <p class="autor">Samuel C. Certo</p>
+                            <!-- Breve resumo do livro -->
+                            <p class="desc">9ª Edição — Conceitos fundamentais de gestão e organização.</p>
+                            <!-- Botão que direciona para a página de detalhes da sinopse -->
+                            <a href="livro.html?id=1" class="btn-secondary">Ver Sinopse</a>
+                        </div>
+                    </article>
+
+                    <!-- Livro 2 -->
+                    <article class="card-livro">
+                        <!-- Link envolvendo a capa do livro 2 -->
+                        <a href="livro.html?id=2" class="book-cover-link">
+                            <div class="book-cover">
+                                <!-- Imagem da capa do livro 2 -->
+                                <img src="assets/imagens/CRIANDO SITES COM HTML.jpg" alt="Capa Criando Sites com HTML" onerror="this.src='assets/imagens/criando-sites-html.jpg'">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <span class="badge">Tecnologia</span>
+                            <h3>Criando Sites com HTML</h3>
+                            <p class="autor">Maurício Samy Silva</p>
+                            <p class="desc">Desenvolvimento de sites de alta qualidade com HTML e CSS.</p>
+                            <a href="livro.html?id=2" class="btn-secondary">Ver Sinopse</a>
+                        </div>
+                    </article>
+
+                    <!-- Livro 3 -->
+                    <article class="card-livro">
+                        <!-- Link envolvendo a capa do livro 3 -->
+                        <a href="livro.html?id=3" class="book-cover-link">
+                            <div class="book-cover">
+                                <!-- Imagem da capa do livro 3 -->
+                                <img src="assets/imagens/CURSO DE DIREITO CONSTITUCIONAL.jpg" alt="Capa Curso de Direito Constitucional" onerror="this.src='assets/imagens/direito-constitucional.jpg'">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <span class="badge">Direito</span>
+                            <h3>Curso de Direito Constitucional</h3>
+                            <p class="autor">L. A. David Araujo & V. Serrano</p>
+                            <p class="desc">24ª Edição — Doutrina e análise constitucional atualizada.</p>
+                            <a href="livro.html?id=3" class="btn-secondary">Ver Sinopse</a>
+                        </div>
+                    </article>
+
+                    <!-- Livro 4 -->
+                    <article class="card-livro">
+                        <!-- Link envolvendo a capa do livro 4 -->
+                        <a href="livro.html?id=4" class="book-cover-link">
+                            <div class="book-cover">
+                                <!-- Imagem da capa do livro 4 -->
+                                <img src="assets/imagens/DESIGN DIGITAL.jpg" alt="Capa Design Digital" onerror="this.src='assets/imagens/design-digital.jpg'">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <span class="badge">Design</span>
+                            <h3>Design Digital</h3>
+                            <p class="autor">Fabiana Guerra & Mirela Terce</p>
+                            <p class="desc">Conceitos e aplicações para websites, animações e vídeos.</p>
+                            <a href="livro.html?id=4" class="btn-secondary">Ver Sinopse</a>
+                        </div>
+                    </article>
+
+                    <!-- Livro 5 -->
+                    <article class="card-livro">
+                        <!-- Link envolvendo a capa do livro 5 -->
+                        <a href="livro.html?id=5" class="book-cover-link">
+                            <div class="book-cover">
+                                <!-- Imagem da capa do livro 5 -->
+                                <img src="assets/imagens/FUNDAMENTOS DE HTML5 E CSS3.jpg" alt="Capa Fundamentos de HTML5 e CSS3" onerror="this.src='assets/imagens/html5-css3.jpg'">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <span class="badge">Tecnologia</span>
+                            <h3>Fundamentos de HTML5 e CSS3</h3>
+                            <p class="autor">Maurício Samy Silva</p>
+                            <p class="desc">Princípios essenciais de estruturação e estilização web.</p>
+                            <a href="livro.html?id=5" class="btn-secondary">Ver Sinopse</a>
+                        </div>
+                    </article>
+
+                    <!-- Livro 6 -->
+                    <article class="card-livro">
+                        <!-- Link envolvendo a capa do livro 6 -->
+                        <a href="livro.html?id=6" class="book-cover-link">
+                            <div class="book-cover">
+                                <!-- Imagem da capa do livro 6 -->
+                                <img src="assets/imagens/INTRODUÇÃO A PROGRAMAÇÃO COM PYTHON.jpg" alt="Capa Programação com Python" onerror="this.src='assets/imagens/python.jpg'">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <span class="badge">Tecnologia</span>
+                            <h3>Introdução à Programação com Python</h3>
+                            <p class="autor">Nilo Ney Coutinho Menezes</p>
+                            <p class="desc">4ª Edição — Algoritmos e lógica para iniciantes.</p>
+                            <a href="livro.html?id=6" class="btn-secondary">Ver Sinopse</a>
+                        </div>
+                    </article>
+
+                    <!-- Livro 7 -->
+                    <article class="card-livro">
+                        <!-- Link envolvendo a capa do livro 7 -->
+                        <a href="livro.html?id=7" class="book-cover-link">
+                            <div class="book-cover">
+                                <!-- Imagem da capa do livro 7 -->
+                                <img src="assets/imagens/MARKETING DIGITAL.jpg" alt="Capa Marketing Digital" onerror="this.src='assets/imagens/marketing-digital.jpg'">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <span class="badge">Marketing</span>
+                            <h3>Marketing Digital de A a Z</h3>
+                            <p class="autor">Vasco Marques</p>
+                            <p class="desc">2ª Edição — Estratégias completas para o ambiente digital.</p>
+                            <a href="livro.html?id=7" class="btn-secondary">Ver Sinopse</a>
+                        </div>
+                    </article>
+
+                    <!-- Livro 8 -->
+                    <article class="card-livro">
+                        <!-- Link envolvendo a capa do livro 8 -->
+                        <a href="livro.html?id=8" class="book-cover-link">
+                            <div class="book-cover">
+                                <!-- Imagem da capa do livro 8 -->
+                                <img src="assets/imagens/PSICOLOGIA COGNITIVA.jpg" alt="Capa Psicologia Cognitiva" onerror="this.src='assets/imagens/psicologia-cognitiva.jpg'">
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <span class="badge">Saúde</span>
+                            <h3>Psicologia Cognitiva e Neurociências</h3>
+                            <p class="autor">J. Landeira-Fernandez et al.</p>
+                            <p class="desc">Modelos teóricos e aplicações na saúde mental e cognitiva.</p>
+                            <a href="livro.html?id=8" class="btn-secondary">Ver Sinopse</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de exibição das unidades acadêmicas -->
+        <section class="section unidades" id="unidades">
+            <div class="container">
+                <!-- Título da seção de unidades -->
+                <div class="section-title">
+                    <h2>As Unidades</h2>
+                    <p>Suporte presencial e polos de atendimento acadêmico</p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Grid em 3 colunas para apresentar os endereços e informações das unidades -->
+                <div class="grid-3">
+                    <!-- Cartão Unidade 1 -->
+                    <div class="card-unidade">
+                        <div class="unidade-icon"><i class="fa-solid fa-building-columns"></i></div>
+                        <h3>Unidade Taboão da Serra</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Av. Vida Nova, 166 - Taboão da Serra/SP</p>
+                        <p><i class="fa-solid fa-clock"></i> Segunda a Sexta: 08h às 22h</p>
+                    </div>
+
+                    <!-- Cartão Unidade 2 -->
+                    <div class="card-unidade">
+                        <div class="unidade-icon"><i class="fa-solid fa-school"></i></div>
+                        <h3>Unidade Morumbi</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Av. Prof. Francisco Morato, 3000 - São Paulo/SP</p>
+                        <p><i class="fa-solid fa-clock"></i> Segunda a Sexta: 08h às 22h</p>
+                    </div>
+
+                    <!-- Cartão Unidade 3 -->
+                    <div class="card-unidade">
+                        <div class="unidade-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3>Polo Digital EAD</h3>
+                        <p><i class="fa-solid fa-globe"></i> Plataforma Online AVA</p>
+                        <p><i class="fa-solid fa-clock"></i> Acesso 24 horas por dia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé institucional completo contendo as redes sociais oficiais -->
+    <footer class="footer">
+        <!-- Container principal do rodapé dividindo marca e redes sociais -->
+        <div class="container footer-container">
+            <!-- Coluna contendo informações e slogan da faculdade -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-text">Uni<span>FECAF</span></span>
+                </div>
+                <p>Centro Universitário UniFECAF — Conectando você ao conhecimento e ao mercado de trabalho.</p>
+            </div>
+
+            <!-- Coluna contendo os links e ícones das redes sociais oficiais -->
+            <div class="footer-social">
+                <h4>Siga a UniFECAF</h4>
+                <div class="social-icons">
+                    <!-- Ícone e link do Instagram oficial da UniFECAF -->
+                    <a href="https://www.instagram.com/unifecaf/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <!-- Ícone e link do TikTok oficial da UniFECAF -->
+                    <a href="https://www.tiktok.com/@unifecaf" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <!-- Ícone e link do YouTube oficial da UniFECAF -->
+                    <a href="https://www.youtube.com/@UniFECAF" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <!-- Ícone e link do Facebook oficial da UniFECAF -->
+                    <a href="https://www.facebook.com/unifecaf" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <!-- Ícone e link do LinkedIn oficial da UniFECAF -->
+                    <a href="https://www.linkedin.com/school/unifecaf/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faixa inferior contendo direitos autorais e identificação do projeto -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 UniFECAF - Centro Universitário. Todos os direitos reservados.</p>
+                <p class="subtext-footer">Projeto acadêmico desenvolvido para a disciplina de Design Web.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
