@@ -1,0 +1,245 @@
+<!-- Declaração de tipo de documento HTML5 -->
+<!DOCTYPE html>
+<!-- Idioma configurado para português do Brasil -->
+<html lang="pt-BR">
+<head>
+    <!-- Configuração de codificação de caracteres UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Ajuste de viewport para compatibilidade mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título inicial da página de detalhes -->
+    <title>Detalhes do Livro - Biblioteca Digital UniFECAF</title>
+
+    <!-- Importação de fontes externas do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Biblioteca de ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Arquivo de folha de estilos CSS unificada -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho simplificado para a página secundária de detalhes -->
+    <header class="header header-simples">
+        <div class="container nav-container">
+            <!-- Logotipo UniFECAF na página interna -->
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-box">
+                        <span class="logo-text">Uni<span>FECAF</span></span>
+                        <span class="subtext">Centro Universitário</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Menu de navegação para retornar a qualquer seção da página inicial -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#sobre">Sobre a Biblioteca</a></li>
+                    <li><a href="index.html#livros">Acervo Digital</a></li>
+                    <li><a href="index.html#unidades">Unidades</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção principal de exibição dos detalhes da obra -->
+    <main class="container section">
+        <!-- Botão para retornar à listagem completa de livros na página principal -->
+        <a href="index.html#livros" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Voltar ao Acervo</a>
+
+        <!-- Bloco contendo imagem e informações da obra dispostos em grid -->
+        <div class="livro-detalhe-container grid-2">
+            <!-- Coluna da esquerda dedicada a exibir a capa do livro ampliada -->
+            <div class="livro-detalhe-imagem">
+                <img id="livro-capa" src="" alt="Capa do Livro">
+            </div>
+
+            <!-- Coluna da direita com título, autor, metadados e a sinopse completa -->
+            <div class="livro-detalhe-info">
+                <!-- Tag contendo a categoria do livro -->
+                <span class="badge" id="livro-categoria">Categoria</span>
+                <!-- Elemento reservado para o título do livro atualizado via JavaScript -->
+                <h2 id="livro-titulo">Título do Livro</h2>
+                <!-- Elemento reservado para o nome do autor -->
+                <p class="autor" id="livro-autor">Autor da Obra</p>
+                
+                <!-- Caixa de dados adicionais e publicação da obra -->
+                <div class="meta-info">
+                    <p><strong>Edição/Volume:</strong> <span id="livro-edicao">-</span></p>
+                    <p><strong>Editora:</strong> <span id="livro-editora">-</span></p>
+                    <p><strong>Formato:</strong> Livro Digital (E-book / PDF)</p>
+                    <p><strong>Disponibilidade:</strong> Leitura Online Imediata no AVA</p>
+                </div>
+
+                <!-- Seção contendo o texto corrido da sinopse -->
+                <h3>Sinopse da Obra</h3>
+                <p id="livro-sinopse" class="sinopse-texto">Carregando sinopse do livro...</p>
+
+                <!-- Botões de ação interativos para o usuário -->
+                <div class="acoes-livro">
+                    <a href="#" class="btn-primary" onclick="alert('Iniciando sessão de leitura no Portal do Aluno...'); return false;"><i class="fa-solid fa-book-open"></i> Iniciar Leitura</a>
+                    <a href="#" class="btn-secondary" onclick="alert('Obra adicionada à sua lista de estudo!'); return false;"><i class="fa-solid fa-bookmark"></i> Salvar no Perfil</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé unificado contendo a mesma estrutura e redes sociais da página principal -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-text">Uni<span>FECAF</span></span>
+                </div>
+                <p>Centro Universitário UniFECAF — Conectando você ao conhecimento e ao mercado de trabalho.</p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Siga a UniFECAF</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/unifecaf/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@unifecaf" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@UniFECAF" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.facebook.com/unifecaf" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/school/unifecaf/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 UniFECAF - Centro Universitário. Todos os direitos reservados.</p>
+                <p class="subtext-footer">Projeto acadêmico desenvolvido para a disciplina de Design Web.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript para carregar as informações do livro selecionado a partir da URL -->
+    <script>
+        // Objeto contendo o banco de dados das 8 obras reais cadastradas
+        const acervo = {
+            "1": {
+                titulo: "Administração Moderna",
+                autor: "Samuel C. Certo",
+                categoria: "Gestão",
+                edicao: "9ª Edição",
+                editora: "Pearson / Prentice Hall",
+                imagem: "assets/imagens/ADMINISTRAÇÃO MODERNA.jpg",
+                imagemAlt: "assets/imagens/adm-moderna.jpg",
+                sinopse: "Administração Moderna apresenta uma visão abrangente sobre as teorias administrativas e as práticas de gestão fundamentais para o ambiente corporativo contemporâneo. A obra aborda planejamento estratégico, liderança, estrutura organizacional, motivação de equipes e tomada de decisão, aliando conceitos teóricos a estudos de caso reais."
+            },
+            "2": {
+                titulo: "Criando Sites com HTML",
+                autor: "Maurício Samy Silva",
+                categoria: "Tecnologia",
+                edicao: "1ª Edição",
+                editora: "Novatec",
+                imagem: "assets/imagens/CRIANDO SITES COM HTML.jpg",
+                imagemAlt: "assets/imagens/criando-sites-html.jpg",
+                sinopse: "Este livro orienta o leitor no desenvolvimento de sites web de alta qualidade utilizando HTML e CSS. Com uma abordagem prática e estruturada, o autor guia desde os fundamentos de marcação de texto e estruturação de documentos até a criação de layouts funcionais, semânticos e alinhados aos padrões internacionais W3C."
+            },
+            "3": {
+                titulo: "Curso de Direito Constitucional",
+                autor: "Luiz Alberto David Araujo & Vidal Serrano Nunes Júnior",
+                categoria: "Direito",
+                edicao: "24ª Edição Revisada e Atualizada",
+                editora: "Manole",
+                imagem: "assets/imagens/CURSO DE DIREITO CONSTITUCIONAL.jpg",
+                imagemAlt: "assets/imagens/direito-constitucional.jpg",
+                sinopse: "Obra de referência no estudo do Direito Constitucional brasileiro. Analisa detalhadamente os princípios fundamentais, a organização do Estado, os direitos e garantias individuais, a estrutura dos Poderes e o controle de constitucionalidade, incorporando as mais recentes alterações legislativas e jurisprudenciais."
+            },
+            "4": {
+                titulo: "Design Digital",
+                autor: "Fabiana Guerra & Mirela Terce",
+                categoria: "Design",
+                edicao: "1ª Edição",
+                editora: "Editora Senac",
+                imagem: "assets/imagens/DESIGN DIGITAL.jpg",
+                imagemAlt: "assets/imagens/design-digital.jpg",
+                sinopse: "Design Digital oferece conceitos e aplicações essenciais para a criação de projetos visuais interativos. O livro explora a fundamentação estética e funcional aplicada a websites, animações, conteúdos em vídeo e webgames, abordando arquitetura de informação, usabilidade e composição visual."
+            },
+            "5": {
+                titulo: "Fundamentos de HTML5 e CSS3",
+                autor: "Maurício Samy Silva",
+                categoria: "Tecnologia",
+                edicao: "1ª Edição",
+                editora: "Novatec",
+                imagem: "assets/imagens/FUNDAMENTOS DE HTML5 E CSS3.jpg",
+                imagemAlt: "assets/imagens/html5-css3.jpg",
+                sinopse: "Guia indispensável para compreender os pilares do desenvolvimento front-end moderno. Explora a semântica trazida pelo HTML5 e os recursos de estilização do CSS3, incluindo flexbox, seletores avançados, formatação de texto e técnicas de design responsivo."
+            },
+            "6": {
+                titulo: "Introdução à Programação com Python",
+                autor: "Nilo Ney Coutinho Menezes",
+                categoria: "Tecnologia",
+                edicao: "4ª Edição Revisada e Ampliada",
+                editora: "Novatec",
+                imagem: "assets/imagens/INTRODUÇÃO A PROGRAMAÇÃO COM PYTHON.jpg",
+                imagemAlt: "assets/imagens/python.jpg",
+                sinopse: "Livro voltado para iniciantes na ciência da computação e programação. Ensina lógica de programação e construção de algoritmos utilizando a linguagem Python de forma didática, cobrindo estruturas de dados, funções, manipulação de arquivos e resolução de problemas."
+            },
+            "7": {
+                titulo: "Marketing Digital de A a Z",
+                autor: "Vasco Marques",
+                categoria: "Marketing",
+                edicao: "2ª Edição Revista e Aumentada",
+                editora: "Digital 360",
+                imagem: "assets/imagens/MARKETING DIGITAL.jpg",
+                imagemAlt: "assets/imagens/marketing-digital.jpg",
+                sinopse: "Um manual prático sobre estratégias de presença digital. Aborda otimização para motores de busca (SEO), marketing de conteúdo, redes sociais, publicidade paga, email marketing e métricas de desempenho para alavancar marcas e negócios na internet."
+            },
+            "8": {
+                titulo: "Psicologia Cognitiva e Neurociências",
+                autor: "J. Landeira-Fernandez, Joaquim Carlos Rossini & Breno Sanvicente-Vieira (Org.)",
+                categoria: "Saúde",
+                edicao: "1ª Edição",
+                editora: "Appris",
+                imagem: "assets/imagens/PSICOLOGIA COGNITIVA.jpg",
+                imagemAlt: "assets/imagens/psicologia-cognitiva.jpg",
+                sinopse: "Coletânea que reúne modelos teóricos e aplicações práticas sobre o funcionamento dos processos mentais superiores. Discute a relação entre atenção, memória, linguagem, percepção visual e tomada de decisão sob a perspectiva da psicologia cognitiva e das neurociências."
+            }
+        };
+
+        // Captura dos parâmetros enviados na URL (ex: livro.html?id=1)
+        const urlParams = new URLSearchParams(window.location.search);
+        // Extração do parâmetro 'id' da URL (caso não exista, carrega o livro 1 por padrão)
+        const bookId = urlParams.get('id') || "1";
+        // Seleção dos dados da obra correspondente no objeto acervo
+        const livro = acervo[bookId] || acervo["1"];
+
+        // Preenchimento dinâmico dos campos HTML com os dados do livro selecionado
+        document.getElementById('livro-titulo').innerText = livro.titulo;
+        document.getElementById('livro-autor').innerText = "Por " + livro.autor;
+        document.getElementById('livro-categoria').innerText = livro.categoria;
+        document.getElementById('livro-edicao').innerText = livro.edicao;
+        document.getElementById('livro-editora').innerText = livro.editora;
+        document.getElementById('livro-sinopse').innerText = livro.sinopse;
+
+        // Atribuição do caminho da imagem com tratamento para diferentes nomes de arquivos
+        const imgElement = document.getElementById('livro-capa');
+        imgElement.src = livro.imagem;
+        imgElement.alt = "Capa de " + livro.titulo;
+        imgElement.onerror = function() {
+            this.src = livro.imagemAlt;
+        };
+
+        // Atualização do título exibido na aba do navegador
+        document.title = livro.titulo + " - Biblioteca Digital UniFECAF";
+    </script>
+</body>
+</html>
